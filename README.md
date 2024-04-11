@@ -34,9 +34,9 @@ The algorithm to generate the new faces for a smoother visual was relatively sim
     };
 
     struct EdgeTracker {
-		vector<FaceTracker*> faces;
-		vector<PointTracker*> points;
-		glm::vec3 edgePoint;
+	vector<FaceTracker*> faces;
+	vector<PointTracker*> points;
+	glm::vec3 edgePoint;
         glm::vec3 midPoint;
 	};
 ```
