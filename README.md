@@ -81,3 +81,5 @@ The subdivision method creates new vertices and quad faces from existing quad or
 In order to render the meshes in line and wire modes, I had to write a new function to compute normals that didn't require the faces to be triangles. I also wrote a new InitVBO function to copy line index data to the gpu rather than face index data, as well as a new drawModel function to draw lines instead of triangles.
 
 In order to have smooth transition between different subdivision levels and rendering modes at runtime, I decided to calculate all subdivision levels first and store them. This way the initial startup may be slow on slow computers, but after that there's no delay between pressing a button and seeing a visual.
+
+I tested my code on my own computer and had a stable 165FPS on all subdivision levels
